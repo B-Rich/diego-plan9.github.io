@@ -1,0 +1,33 @@
+qiskit.simulators package
+=========================
+
+.. automodule:: qiskit.simulators
+
+
+
+
+
+
+
+Contents
+--------
+
+.. autosummary::
+    :nosignatures:
+
+    LocalSimulator
+    class_name
+    class_obj
+    fullname
+    
+    
+    ispkg
+    
+    local_backends
+    local_configuration
+    
+    mod_info
+    modspec
+    name
+    
+    
