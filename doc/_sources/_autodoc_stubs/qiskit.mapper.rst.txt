@@ -1,0 +1,27 @@
+qiskit.mapper package
+=====================
+
+.. automodule:: qiskit.mapper
+
+
+
+
+
+
+
+Contents
+--------
+
+.. autosummary::
+    :nosignatures:
+
+    Coupling
+    MapperError
+    coupling_dict2list
+    coupling_list2dict
+    cx_cancellation
+    direction_mapper
+    euler_angles_1q
+    optimize_1q_gates
+    swap_mapper
+    two_qubit_kak

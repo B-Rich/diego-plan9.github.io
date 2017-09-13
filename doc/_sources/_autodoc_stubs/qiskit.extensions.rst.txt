@@ -1,0 +1,31 @@
+qiskit.extensions package
+=========================
+
+.. automodule:: qiskit.extensions
+
+
+
+
+
+Subpackages
+-----------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
+
+    standard
+
+.. toctree::
+    :hidden:
+
+    qiskit.extensions.standard
+
+
+Contents
+--------
+
+.. autosummary::
+    :nosignatures:
+
+    
