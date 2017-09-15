@@ -23,18 +23,18 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-
-<div id="head" class="head">
-    <a href="../"> QISKit </a>
-</div>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
   </head>
   <body>
+<div id="head" class="head">
+    <a href="/">QISKit</a>
+</div>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -44,22 +44,34 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li> 
+<li id="toc-toggle">
+<a class="btn btn-primary" role="button" data-toggle="collapse"
+   href=".sphinxsidebar" aria-expanded="false" aria-controls="collapseExample">
+  TOC</a> |
+</li>
+
+        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li>
+ 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+
             <p class="logo"><a href="../index.html">
-              <img class="logo" src="../_static/qiskit-logo.gif" alt="Logo"/>
+              <img class="logo" src="../_static/qiskit-logo-white-no-margin.gif" alt="Logo"/>
             </a></p>
+<p class="logo-description">Quantum Information Software Kit</p>
+
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dev_introduction.html">Developer documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="qiskit.html">SDK reference (public)</a></li>
 </ul>
 
+<p class="spacer"/>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -240,11 +252,23 @@ by “–description (type)–”. For example, a circuit’s name is denoted by
 <tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.run" title="qiskit.QuantumProgram.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>(qobj[,&nbsp;wait,&nbsp;timeout,&nbsp;silent])</td>
 <td>Run a program (a pre-compiled quantum program).</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qiskit.QuantumProgram.save" title="qiskit.QuantumProgram.save"><code class="xref py py-obj docutils literal"><span class="pre">save</span></code></a>([file_name,&nbsp;beauty])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#qiskit.QuantumProgram.run_async" title="qiskit.QuantumProgram.run_async"><code class="xref py py-obj docutils literal"><span class="pre">run_async</span></code></a>(qobj[,&nbsp;wait,&nbsp;timeout,&nbsp;silent,&nbsp;…])</td>
+<td>Run a program (a pre-compiled quantum program) asynchronously.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.run_batch" title="qiskit.QuantumProgram.run_batch"><code class="xref py py-obj docutils literal"><span class="pre">run_batch</span></code></a>(qobj_list[,&nbsp;wait,&nbsp;timeout,&nbsp;silent])</td>
+<td>Run various programs (a list of pre-compiled quantum programs).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qiskit.QuantumProgram.run_batch_async" title="qiskit.QuantumProgram.run_batch_async"><code class="xref py py-obj docutils literal"><span class="pre">run_batch_async</span></code></a>(qobj_list[,&nbsp;wait,&nbsp;timeout,&nbsp;…])</td>
+<td>Run various programs (a list of pre-compiled quantum program) asynchronously.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.save" title="qiskit.QuantumProgram.save"><code class="xref py py-obj docutils literal"><span class="pre">save</span></code></a>([file_name,&nbsp;beauty])</td>
 <td>Save Quantum Program in a Json file.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.set_api" title="qiskit.QuantumProgram.set_api"><code class="xref py py-obj docutils literal"><span class="pre">set_api</span></code></a>(token,&nbsp;url[,&nbsp;verify])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#qiskit.QuantumProgram.set_api" title="qiskit.QuantumProgram.set_api"><code class="xref py py-obj docutils literal"><span class="pre">set_api</span></code></a>(token,&nbsp;url[,&nbsp;verify])</td>
 <td>Setup the API.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.wait_for_results" title="qiskit.QuantumProgram.wait_for_results"><code class="xref py py-obj docutils literal"><span class="pre">wait_for_results</span></code></a>(timeout)</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -277,7 +301,7 @@ by “–description (type)–”. For example, a circuit’s name is denoted by
 
 <dl class="method">
 <dt id="qiskit.QuantumProgram.compile">
-<code class="descname">compile</code><span class="sig-paren">(</span><em>name_of_circuits</em>, <em>backend='local_qasm_simulator'</em>, <em>config=None</em>, <em>silent=True</em>, <em>basis_gates=None</em>, <em>coupling_map=None</em>, <em>initial_layout=None</em>, <em>shots=1024</em>, <em>max_credits=3</em>, <em>seed=None</em>, <em>qobjid=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.compile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.compile" title="Permalink to this definition">¶</a></dt>
+<code class="descname">compile</code><span class="sig-paren">(</span><em>name_of_circuits</em>, <em>backend='local_qasm_simulator'</em>, <em>config=None</em>, <em>silent=True</em>, <em>basis_gates=None</em>, <em>coupling_map=None</em>, <em>initial_layout=None</em>, <em>shots=1024</em>, <em>max_credits=3</em>, <em>seed=None</em>, <em>qobj_id=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.compile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.compile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compile the circuits into the exectution list.</p>
 <p>This builds the internal “to execute” list which is list of quantum
 circuits to run on different backends.</p>
@@ -937,14 +961,15 @@ list if it has not been set.</td>
 <dl class="method">
 <dt id="qiskit.QuantumProgram.run">
 <code class="descname">run</code><span class="sig-paren">(</span><em>qobj</em>, <em>wait=5</em>, <em>timeout=60</em>, <em>silent=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.run" title="Permalink to this definition">¶</a></dt>
-<dd><p>Run a program (a pre-compiled quantum program).</p>
-<p>All input for run comes from qobj</p>
+<dd><p>Run a program (a pre-compiled quantum program). This function will
+block until the Job is processed.</p>
+<p>The program to run is extracted from the qobj parameter.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>qobj</strong> (<em>dict</em>) – the dictionary of the quantum object to run</li>
+<li><strong>qobj</strong> (<em>dict</em>) – the dictionary of the quantum object to run.</li>
 <li><strong>wait</strong> (<em>int</em>) – wait time is how long to check if the job is completed</li>
 <li><strong>timeout</strong> (<em>int</em>) – is time until the execution stops</li>
 <li><strong>silent</strong> (<em>bool</em>) – is an option to print out the running information or</li>
@@ -952,8 +977,86 @@ list if it has not been set.</td>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">status done and populates the internal __quantum_program with the
-data</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A Result (class).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="qiskit.QuantumProgram.run_async">
+<code class="descname">run_async</code><span class="sig-paren">(</span><em>qobj</em>, <em>wait=5</em>, <em>timeout=60</em>, <em>silent=True</em>, <em>callback=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.run_async"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.run_async" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a program (a pre-compiled quantum program) asynchronously. This
+is a non-blocking function, so it will return inmediately.</p>
+<p>All input for run comes from qobj.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>qobj</strong> (<em>dict</em>) – the dictionary of the quantum object to
+run or list of qobj.</li>
+<li><strong>wait</strong> (<em>int</em>) – Wait time is how long to check if all jobs is completed</li>
+<li><strong>timeout</strong> (<em>int</em>) – Time until the execution stops</li>
+<li><strong>silent</strong> (<em>bool</em>) – If true, prints out the running information</li>
+<li><strong>callback</strong> (<em>fn</em><em>(</em><em>result</em><em>)</em>) – A function with signature:
+fn(result):
+The result param will be a Result object.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="qiskit.QuantumProgram.run_batch">
+<code class="descname">run_batch</code><span class="sig-paren">(</span><em>qobj_list</em>, <em>wait=5</em>, <em>timeout=120</em>, <em>silent=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.run_batch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.run_batch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run various programs (a list of pre-compiled quantum programs). This
+function will block until all programs are processed.</p>
+<p>The programs to run are extracted from qobj elements of the list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>qobj_list</strong> (<em>list</em><em>(</em><em>dict</em><em>)</em>) – The list of quantum objects to run.</li>
+<li><strong>wait</strong> (<em>int</em>) – Wait time is how long to check if all jobs is completed</li>
+<li><strong>timeout</strong> (<em>int</em>) – Time until the execution stops</li>
+<li><strong>silent</strong> (<em>bool</em>) – If true, prints out the running information</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A list of Result (class). The list will contain one Result object
+per qobj in the input list.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="qiskit.QuantumProgram.run_batch_async">
+<code class="descname">run_batch_async</code><span class="sig-paren">(</span><em>qobj_list</em>, <em>wait=5</em>, <em>timeout=120</em>, <em>silent=True</em>, <em>callback=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.run_batch_async"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.run_batch_async" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run various programs (a list of pre-compiled quantum program)
+asynchronously. This is a non-blocking function, so it will return
+inmediately.</p>
+<p>All input for run comes from qobj.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>qobj_list</strong> (<em>list</em><em>(</em><em>dict</em><em>)</em>) – The list of quantum objects to run.</li>
+<li><strong>wait</strong> (<em>int</em>) – Wait time is how long to check if all jobs is completed</li>
+<li><strong>timeout</strong> (<em>int</em>) – Time until the execution stops</li>
+<li><strong>silent</strong> (<em>bool</em>) – If true, prints out the running information</li>
+<li><strong>callback</strong> (<em>fn</em><em>(</em><em>results</em><em>)</em>) – A function with signature:
+fn(results):
+The results param will be a list of Result objects, one
+Result per qobj in the input list.</li>
+</ul>
 </td>
 </tr>
 </tbody>
@@ -1012,6 +1115,11 @@ experience.</li>
 </table>
 </dd></dl>
 
+<dl class="method">
+<dt id="qiskit.QuantumProgram.wait_for_results">
+<code class="descname">wait_for_results</code><span class="sig-paren">(</span><em>timeout</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.wait_for_results"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.wait_for_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </div>
@@ -1031,11 +1139,18 @@ experience.</li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li> 
+<li id="toc-toggle">
+<a class="btn btn-primary" role="button" data-toggle="collapse"
+   href=".sphinxsidebar" aria-expanded="false" aria-controls="collapseExample">
+  TOC</a> |
+</li>
+
+        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li>
+ 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright .
+        &#169; Copyright 2017 IBM Research.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
     </div>
   </body>

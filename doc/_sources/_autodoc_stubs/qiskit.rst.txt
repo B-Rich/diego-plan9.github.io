@@ -43,8 +43,10 @@ Contents
     Gate
     Instruction
     InstructionSet
+    JobProcessor
     QISKitError
     QuantumCircuit
+    QuantumJob
     QuantumProgram
     QuantumRegister
     Result
