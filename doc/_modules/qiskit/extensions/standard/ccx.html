@@ -69,7 +69,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../quickstart.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../dev_introduction.html">Developer documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference (public)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference</a></li>
 </ul>
 
 <p class="spacer"/>
@@ -146,13 +146,13 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_modifiers</span><span class="p">(</span><span class="n">circ</span><span class="o">.</span><span class="n">ccx</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">arg</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">arg</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">arg</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
 
 
-<span class="k">def</span> <span class="nf">ccx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctl1</span><span class="p">,</span> <span class="n">ctl2</span><span class="p">,</span> <span class="n">tgt</span><span class="p">):</span>
+<div class="viewcode-block" id="ccx"><a class="viewcode-back" href="../../../../_autodoc_public/qiskit.extensions.standard.ccx.html#qiskit.ccx">[docs]</a><span class="k">def</span> <span class="nf">ccx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctl1</span><span class="p">,</span> <span class="n">ctl2</span><span class="p">,</span> <span class="n">tgt</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Apply Toffoli to circuit.&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_check_qubit</span><span class="p">(</span><span class="n">ctl1</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_check_qubit</span><span class="p">(</span><span class="n">ctl2</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_check_qubit</span><span class="p">(</span><span class="n">tgt</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_check_dups</span><span class="p">([</span><span class="n">ctl1</span><span class="p">,</span> <span class="n">ctl2</span><span class="p">,</span> <span class="n">tgt</span><span class="p">])</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">ToffoliGate</span><span class="p">(</span><span class="n">ctl1</span><span class="p">,</span> <span class="n">ctl2</span><span class="p">,</span> <span class="n">tgt</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">ToffoliGate</span><span class="p">(</span><span class="n">ctl1</span><span class="p">,</span> <span class="n">ctl2</span><span class="p">,</span> <span class="n">tgt</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span></div>
 
 
 <span class="n">QuantumCircuit</span><span class="o">.</span><span class="n">ccx</span> <span class="o">=</span> <span class="n">ccx</span>

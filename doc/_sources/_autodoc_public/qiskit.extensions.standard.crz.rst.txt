@@ -1,0 +1,6 @@
+qiskit\.extensions\.standard\.crz
+=================================
+
+.. currentmodule:: qiskit.extensions.standard
+
+.. autofunction:: crz

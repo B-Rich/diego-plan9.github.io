@@ -6,19 +6,42 @@ qiskit.unroll package
 
 
 
-
-
-
-Contents
---------
+Classes
+-------
 
 .. autosummary::
-    :nosignatures:
+   :nosignatures:
+   :toctree: ../_autodoc_public
 
-    BackendError
     CircuitBackend
     DAGBackend
     JsonBackend
     PrinterBackend
     Unroller
     UnrollerBackend
+
+.. toctree::
+    :hidden:
+
+    qiskit.unroll.CircuitBackend
+    qiskit.unroll.DAGBackend
+    qiskit.unroll.JsonBackend
+    qiskit.unroll.PrinterBackend
+    qiskit.unroll.Unroller
+    qiskit.unroll.UnrollerBackend
+
+
+Exceptions
+----------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
+
+    BackendError
+
+.. toctree::
+    :hidden:
+
+    qiskit.unroll.BackendError
+

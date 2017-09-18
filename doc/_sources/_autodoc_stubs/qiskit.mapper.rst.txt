@@ -6,17 +6,43 @@ qiskit.mapper package
 
 
 
-
-
-
-Contents
---------
+Classes
+-------
 
 .. autosummary::
-    :nosignatures:
+   :nosignatures:
+   :toctree: ../_autodoc_public
 
     Coupling
+
+.. toctree::
+    :hidden:
+
+    qiskit.mapper.Coupling
+
+
+Exceptions
+----------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
+
     MapperError
+
+.. toctree::
+    :hidden:
+
+    qiskit.mapper.MapperError
+
+
+Functions
+---------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
+
     coupling_dict2list
     coupling_list2dict
     cx_cancellation
@@ -25,3 +51,15 @@ Contents
     optimize_1q_gates
     swap_mapper
     two_qubit_kak
+
+.. toctree::
+    :hidden:
+
+    qiskit.mapper.coupling_dict2list
+    qiskit.mapper.coupling_list2dict
+    qiskit.mapper.cx_cancellation
+    qiskit.mapper.direction_mapper
+    qiskit.mapper.euler_angles_1q
+    qiskit.mapper.optimize_1q_gates
+    qiskit.mapper.swap_mapper
+    qiskit.mapper.two_qubit_kak

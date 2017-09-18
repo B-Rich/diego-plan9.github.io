@@ -1,0 +1,6 @@
+qiskit\.extensions\.standard\.ry
+================================
+
+.. currentmodule:: qiskit.extensions.standard
+
+.. autofunction:: ry

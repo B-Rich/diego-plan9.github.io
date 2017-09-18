@@ -1,0 +1,6 @@
+qiskit\.extensions\.standard\.u3
+================================
+
+.. currentmodule:: qiskit.extensions.standard
+
+.. autofunction:: u3

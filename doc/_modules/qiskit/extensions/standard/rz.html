@@ -69,7 +69,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../quickstart.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../dev_introduction.html">Developer documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference (public)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference</a></li>
 </ul>
 
 <p class="spacer"/>
@@ -147,7 +147,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_modifiers</span><span class="p">(</span><span class="n">circ</span><span class="o">.</span><span class="n">rz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">param</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">arg</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 
 
-<span class="k">def</span> <span class="nf">rz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+<div class="viewcode-block" id="rz"><a class="viewcode-back" href="../../../../_autodoc_public/qiskit.extensions.standard.rz.html#qiskit.rz">[docs]</a><span class="k">def</span> <span class="nf">rz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Apply rz to q.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">QuantumRegister</span><span class="p">):</span>
         <span class="n">gs</span> <span class="o">=</span> <span class="n">InstructionSet</span><span class="p">()</span>
@@ -156,7 +156,7 @@
         <span class="k">return</span> <span class="n">gs</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_qubit</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">RZGate</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">RZGate</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span></div>
 
 
 <span class="n">QuantumCircuit</span><span class="o">.</span><span class="n">rz</span> <span class="o">=</span> <span class="n">rz</span>

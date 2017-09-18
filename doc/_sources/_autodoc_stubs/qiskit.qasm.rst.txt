@@ -4,29 +4,34 @@ qiskit.qasm package
 .. automodule:: qiskit.qasm
 
 
-Submodules
+
+
+Classes
+-------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
+
+    Qasm
+
+.. toctree::
+    :hidden:
+
+    qiskit.qasm.Qasm
+
+
+Exceptions
 ----------
 
 .. autosummary::
    :nosignatures:
    :toctree: ../_autodoc_public
 
-    parsetab
+    QasmError
 
 .. toctree::
     :hidden:
 
-    qiskit.qasm.parsetab
+    qiskit.qasm.QasmError
 
-
-
-
-
-Contents
---------
-
-.. autosummary::
-    :nosignatures:
-
-    Qasm
-    QasmError

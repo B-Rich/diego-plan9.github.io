@@ -1,0 +1,6 @@
+qiskit\.extensions\.standard\.u\_base
+=====================================
+
+.. currentmodule:: qiskit.extensions.standard
+
+.. autofunction:: u_base

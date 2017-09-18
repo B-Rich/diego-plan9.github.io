@@ -4,8 +4,14 @@ qiskit.extensions.standard package
 .. automodule:: qiskit.extensions.standard
 
 
-Submodules
-----------
+
+
+
+
+
+
+Functions
+---------
 
 .. autosummary::
    :nosignatures:
@@ -19,12 +25,10 @@ Submodules
     cu1
     cu3
     cx
-    cxbase
+    cx_base
     cy
     cz
-    gatestools
     h
-    header
     iden
     rx
     ry
@@ -35,7 +39,7 @@ Submodules
     u1
     u2
     u3
-    ubase
+    u_base
     x
     y
     z
@@ -51,12 +55,10 @@ Submodules
     qiskit.extensions.standard.cu1
     qiskit.extensions.standard.cu3
     qiskit.extensions.standard.cx
-    qiskit.extensions.standard.cxbase
+    qiskit.extensions.standard.cx_base
     qiskit.extensions.standard.cy
     qiskit.extensions.standard.cz
-    qiskit.extensions.standard.gatestools
     qiskit.extensions.standard.h
-    qiskit.extensions.standard.header
     qiskit.extensions.standard.iden
     qiskit.extensions.standard.rx
     qiskit.extensions.standard.ry
@@ -67,47 +69,7 @@ Submodules
     qiskit.extensions.standard.u1
     qiskit.extensions.standard.u2
     qiskit.extensions.standard.u3
-    qiskit.extensions.standard.ubase
+    qiskit.extensions.standard.u_base
     qiskit.extensions.standard.x
     qiskit.extensions.standard.y
     qiskit.extensions.standard.z
-
-
-
-
-
-Contents
---------
-
-.. autosummary::
-    :nosignatures:
-
-    barrier
-    ccx
-    ch
-    crz
-    cswap
-    cu1
-    cu3
-    cx
-    cx_base
-    
-    cy
-    cz
-    h
-    
-    iden
-    rx
-    ry
-    rz
-    s
-    swap
-    t
-    u1
-    u2
-    u3
-    u_base
-    
-    x
-    y
-    z

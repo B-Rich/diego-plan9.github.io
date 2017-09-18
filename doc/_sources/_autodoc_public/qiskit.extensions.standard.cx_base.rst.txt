@@ -1,0 +1,6 @@
+qiskit\.extensions\.standard\.cx\_base
+======================================
+
+.. currentmodule:: qiskit.extensions.standard
+
+.. autofunction:: cx_base

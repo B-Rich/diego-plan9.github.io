@@ -1,0 +1,22 @@
+qiskit\.QuantumJob
+==================
+
+.. currentmodule:: qiskit
+
+.. autoclass:: QuantumJob
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~QuantumJob.__init__
+   
+   
+
+   
+   
+   

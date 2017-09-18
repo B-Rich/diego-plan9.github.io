@@ -6,13 +6,19 @@ qiskit.dagcircuit package
 
 
 
-
-
-
-Contents
---------
+Classes
+-------
 
 .. autosummary::
-    :nosignatures:
+   :nosignatures:
+   :toctree: ../_autodoc_public
 
     DAGCircuit
+
+.. toctree::
+    :hidden:
+
+    qiskit.dagcircuit.DAGCircuit
+
+
+

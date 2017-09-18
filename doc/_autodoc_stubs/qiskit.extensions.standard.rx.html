@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>&lt;no title&gt; &#8212; QISKit SDK 0.3.5 documentation</title>
+    <title>qiskit.extensions.standard.rx module &#8212; QISKit SDK 0.3.5 documentation</title>
     <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -26,8 +26,8 @@
     <script type="text/javascript" src="../_static/bootstrap.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="qiskit.extensions.standard.ry.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="qiskit.extensions.standard.iden.html" />
+    <link rel="next" title="qiskit.extensions.standard.ry module" href="qiskit.extensions.standard.ry.html" />
+    <link rel="prev" title="qiskit.extensions.standard.iden module" href="qiskit.extensions.standard.iden.html" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -47,10 +47,10 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="qiskit.extensions.standard.ry.html" title="&lt;no title&gt;"
+          <a href="qiskit.extensions.standard.ry.html" title="qiskit.extensions.standard.ry module"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="qiskit.extensions.standard.iden.html" title="&lt;no title&gt;"
+          <a href="qiskit.extensions.standard.iden.html" title="qiskit.extensions.standard.iden module"
              accesskey="P">previous</a> |</li>
 <li id="toc-toggle">
 <a class="btn btn-primary" role="button" data-toggle="collapse"
@@ -74,21 +74,95 @@
 <p class="logo-description">Quantum Information Software Kit</p>
 
   <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dev_introduction.html">Developer documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qiskit.html">SDK reference (public)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="qiskit.html">SDK reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="qiskit.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="qiskit.dagcircuit.html">qiskit.dagcircuit package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="qiskit.extensions.html">qiskit.extensions package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="qiskit.extensions.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l5 current"><a class="reference internal" href="qiskit.extensions.standard.html">qiskit.extensions.standard package</a><ul class="current">
+<li class="toctree-l6 current"><a class="reference internal" href="qiskit.extensions.standard.html#functions">Functions</a><ul class="current">
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.barrier.html">qiskit.extensions.standard.barrier</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.ccx.html">qiskit.extensions.standard.ccx</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.ch.html">qiskit.extensions.standard.ch</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.crz.html">qiskit.extensions.standard.crz</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.cswap.html">qiskit.extensions.standard.cswap</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.cu1.html">qiskit.extensions.standard.cu1</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.cu3.html">qiskit.extensions.standard.cu3</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.cx.html">qiskit.extensions.standard.cx</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.cx_base.html">qiskit.extensions.standard.cx_base</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.cy.html">qiskit.extensions.standard.cy</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.cz.html">qiskit.extensions.standard.cz</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.h.html">qiskit.extensions.standard.h</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.iden.html">qiskit.extensions.standard.iden</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.rx.html">qiskit.extensions.standard.rx</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.ry.html">qiskit.extensions.standard.ry</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.rz.html">qiskit.extensions.standard.rz</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.s.html">qiskit.extensions.standard.s</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.swap.html">qiskit.extensions.standard.swap</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.t.html">qiskit.extensions.standard.t</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.u1.html">qiskit.extensions.standard.u1</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.u2.html">qiskit.extensions.standard.u2</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.u3.html">qiskit.extensions.standard.u3</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.u_base.html">qiskit.extensions.standard.u_base</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.x.html">qiskit.extensions.standard.x</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.y.html">qiskit.extensions.standard.y</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../_autodoc_public/qiskit.extensions.standard.z.html">qiskit.extensions.standard.z</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.barrier.html">qiskit.extensions.standard.barrier module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.ccx.html">qiskit.extensions.standard.ccx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.ch.html">qiskit.extensions.standard.ch module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.crz.html">qiskit.extensions.standard.crz module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.cswap.html">qiskit.extensions.standard.cswap module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.cu1.html">qiskit.extensions.standard.cu1 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.cu3.html">qiskit.extensions.standard.cu3 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.cx.html">qiskit.extensions.standard.cx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.cy.html">qiskit.extensions.standard.cy module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.cz.html">qiskit.extensions.standard.cz module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.h.html">qiskit.extensions.standard.h module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.iden.html">qiskit.extensions.standard.iden module</a></li>
+<li class="toctree-l7 current"><a class="current reference internal" href="#">qiskit.extensions.standard.rx module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.ry.html">qiskit.extensions.standard.ry module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.rz.html">qiskit.extensions.standard.rz module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.s.html">qiskit.extensions.standard.s module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.swap.html">qiskit.extensions.standard.swap module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.t.html">qiskit.extensions.standard.t module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.u1.html">qiskit.extensions.standard.u1 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.u2.html">qiskit.extensions.standard.u2 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.u3.html">qiskit.extensions.standard.u3 module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.x.html">qiskit.extensions.standard.x module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.y.html">qiskit.extensions.standard.y module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="qiskit.extensions.standard.z.html">qiskit.extensions.standard.z module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.mapper.html">qiskit.mapper package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.qasm.html">qiskit.qasm package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.simulators.html">qiskit.simulators package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.unroll.html">qiskit.unroll package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="qiskit.html#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qiskit.html#exceptions">Exceptions</a></li>
+</ul>
+</li>
 </ul>
 
 <p class="spacer"/>
   <h4>Previous topic</h4>
   <p class="topless"><a href="qiskit.extensions.standard.iden.html"
-                        title="previous chapter">&lt;no title&gt;</a></p>
+                        title="previous chapter">qiskit.extensions.standard.iden module</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="qiskit.extensions.standard.ry.html"
-                        title="next chapter">&lt;no title&gt;</a></p>
+                        title="next chapter">qiskit.extensions.standard.ry module</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -114,7 +188,9 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <p>qiskit.extensions.standard.rx module</p>
+  <div class="section" id="qiskit-extensions-standard-rx-module">
+<h1>qiskit.extensions.standard.rx module<a class="headerlink" href="#qiskit-extensions-standard-rx-module" title="Permalink to this headline">¶</a></h1>
+</div>
 
 
           </div>
@@ -132,10 +208,10 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="qiskit.extensions.standard.ry.html" title="&lt;no title&gt;"
+          <a href="qiskit.extensions.standard.ry.html" title="qiskit.extensions.standard.ry module"
              >next</a> |</li>
         <li class="right" >
-          <a href="qiskit.extensions.standard.iden.html" title="&lt;no title&gt;"
+          <a href="qiskit.extensions.standard.iden.html" title="qiskit.extensions.standard.iden module"
              >previous</a> |</li>
 <li id="toc-toggle">
 <a class="btn btn-primary" role="button" data-toggle="collapse"

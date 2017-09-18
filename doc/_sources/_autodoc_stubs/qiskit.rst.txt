@@ -4,15 +4,12 @@ qiskit package
 .. automodule:: qiskit
 
 
-
-
-
-Subpackages
------------
+Submodules
+----------
 
 .. autosummary::
    :nosignatures:
-   :toctree: ../_autodoc_public
+   :toctree:
 
     dagcircuit
     extensions
@@ -21,22 +18,13 @@ Subpackages
     simulators
     unroll
 
-.. toctree::
-    :hidden:
 
-    qiskit.dagcircuit
-    qiskit.extensions
-    qiskit.mapper
-    qiskit.qasm
-    qiskit.simulators
-    qiskit.unroll
-
-
-Contents
---------
+Classes
+-------
 
 .. autosummary::
-    :nosignatures:
+   :nosignatures:
+   :toctree: ../_autodoc_public
 
     ClassicalRegister
     CompositeGate
@@ -44,16 +32,39 @@ Contents
     Instruction
     InstructionSet
     JobProcessor
-    QISKitError
     QuantumCircuit
     QuantumJob
     QuantumProgram
     QuantumRegister
     Result
-    
-    
-    
-    
-    
-    
-    
+
+.. toctree::
+    :hidden:
+
+    qiskit.ClassicalRegister
+    qiskit.CompositeGate
+    qiskit.Gate
+    qiskit.Instruction
+    qiskit.InstructionSet
+    qiskit.JobProcessor
+    qiskit.QuantumCircuit
+    qiskit.QuantumJob
+    qiskit.QuantumProgram
+    qiskit.QuantumRegister
+    qiskit.Result
+
+
+Exceptions
+----------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
+
+    QISKitError
+
+.. toctree::
+    :hidden:
+
+    qiskit.QISKitError
+

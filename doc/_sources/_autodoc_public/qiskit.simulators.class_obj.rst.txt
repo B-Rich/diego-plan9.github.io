@@ -1,0 +1,23 @@
+qiskit\.simulators\.class\_obj
+==============================
+
+.. currentmodule:: qiskit.simulators
+
+.. autoclass:: class_obj
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~class_obj.__init__
+      ~class_obj.run
+   
+   
+
+   
+   
+   

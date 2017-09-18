@@ -69,7 +69,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../quickstart.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../dev_introduction.html">Developer documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference (public)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference</a></li>
 </ul>
 
 <p class="spacer"/>
@@ -154,7 +154,7 @@
                                 <span class="bp">self</span><span class="o">.</span><span class="n">arg</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 
 
-<span class="k">def</span> <span class="nf">u3</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+<div class="viewcode-block" id="u3"><a class="viewcode-back" href="../../../../_autodoc_public/qiskit.extensions.standard.u3.html#qiskit.u3">[docs]</a><span class="k">def</span> <span class="nf">u3</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Apply u3 to q.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">QuantumRegister</span><span class="p">):</span>
         <span class="n">gs</span> <span class="o">=</span> <span class="n">InstructionSet</span><span class="p">()</span>
@@ -163,7 +163,7 @@
         <span class="k">return</span> <span class="n">gs</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_qubit</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">U3Gate</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">U3Gate</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">lam</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span></div>
 
 
 <span class="n">QuantumCircuit</span><span class="o">.</span><span class="n">u3</span> <span class="o">=</span> <span class="n">u3</span>

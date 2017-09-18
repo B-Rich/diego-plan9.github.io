@@ -1,0 +1,39 @@
+qiskit\.simulators\.pkgutil
+===========================
+
+.. automodule:: qiskit.simulators.pkgutil
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      extend_path
+      find_loader
+      get_data
+      get_importer
+      get_loader
+      iter_importer_modules
+      iter_importers
+      iter_modules
+      iter_zipimport_modules
+      read_code
+      walk_packages
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      ImpImporter
+      ImpLoader
+   
+   
+
+   
+   
+   

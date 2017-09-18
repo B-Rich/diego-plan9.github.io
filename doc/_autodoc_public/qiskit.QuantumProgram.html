@@ -26,6 +26,8 @@
     <script type="text/javascript" src="../_static/bootstrap.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="qiskit.QuantumRegister" href="qiskit.QuantumRegister.html" />
+    <link rel="prev" title="qiskit.QuantumJob" href="qiskit.QuantumJob.html" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -44,6 +46,12 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="qiskit.QuantumRegister.html" title="qiskit.QuantumRegister"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="qiskit.QuantumJob.html" title="qiskit.QuantumJob"
+             accesskey="P">previous</a> |</li>
 <li id="toc-toggle">
 <a class="btn btn-primary" role="button" data-toggle="collapse"
    href=".sphinxsidebar" aria-expanded="false" aria-controls="collapseExample">
@@ -51,7 +59,8 @@
 </li>
 
         <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li>
- 
+
+          <li class="nav-item nav-item-1"><a href="../_autodoc_stubs/qiskit.html" accesskey="U">qiskit package</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -63,19 +72,43 @@
 <p class="logo-description">Quantum Information Software Kit</p>
 
   <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dev_introduction.html">Developer documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qiskit.html">SDK reference (public)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../_autodoc_stubs/qiskit.html">SDK reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../_autodoc_stubs/qiskit.html#submodules">Submodules</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../_autodoc_stubs/qiskit.html#classes">Classes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="qiskit.ClassicalRegister.html">qiskit.ClassicalRegister</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.CompositeGate.html">qiskit.CompositeGate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.Gate.html">qiskit.Gate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.Instruction.html">qiskit.Instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.InstructionSet.html">qiskit.InstructionSet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.JobProcessor.html">qiskit.JobProcessor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.QuantumCircuit.html">qiskit.QuantumCircuit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.QuantumJob.html">qiskit.QuantumJob</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">qiskit.QuantumProgram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.QuantumRegister.html">qiskit.QuantumRegister</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qiskit.Result.html">qiskit.Result</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../_autodoc_stubs/qiskit.html#exceptions">Exceptions</a></li>
+</ul>
+</li>
 </ul>
 
 <p class="spacer"/>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="qiskit.QuantumJob.html"
+                        title="previous chapter">qiskit.QuantumJob</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="qiskit.QuantumRegister.html"
+                        title="next chapter">qiskit.QuantumRegister</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/_autodoc_stubs/qiskit.QuantumProgram.rst.txt"
+      <li><a href="../_sources/_autodoc_public/qiskit.QuantumProgram.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -1000,7 +1033,7 @@ run or list of qobj.</li>
 <li><strong>wait</strong> (<em>int</em>) – Wait time is how long to check if all jobs is completed</li>
 <li><strong>timeout</strong> (<em>int</em>) – Time until the execution stops</li>
 <li><strong>silent</strong> (<em>bool</em>) – If true, prints out the running information</li>
-<li><strong>callback</strong> (<em>fn</em><em>(</em><em>result</em><em>)</em>) – A function with signature:
+<li><strong>callback</strong> (<em>fn</em><em>(</em><a class="reference internal" href="qiskit.simulators.LocalSimulator.html#qiskit.simulators.LocalSimulator.result" title="qiskit.simulators.LocalSimulator.result"><em>result</em></a><em>)</em>) – A function with signature:
 fn(result):
 The result param will be a Result object.</li>
 </ul>
@@ -1139,6 +1172,12 @@ experience.</li>
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="qiskit.QuantumRegister.html" title="qiskit.QuantumRegister"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="qiskit.QuantumJob.html" title="qiskit.QuantumJob"
+             >previous</a> |</li>
 <li id="toc-toggle">
 <a class="btn btn-primary" role="button" data-toggle="collapse"
    href=".sphinxsidebar" aria-expanded="false" aria-controls="collapseExample">
@@ -1146,7 +1185,8 @@ experience.</li>
 </li>
 
         <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li>
- 
+
+          <li class="nav-item nav-item-1"><a href="../_autodoc_stubs/qiskit.html" >qiskit package</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

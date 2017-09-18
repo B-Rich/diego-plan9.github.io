@@ -1,0 +1,6 @@
+qiskit\.extensions\.standard\.x
+===============================
+
+.. currentmodule:: qiskit.extensions.standard
+
+.. autofunction:: x

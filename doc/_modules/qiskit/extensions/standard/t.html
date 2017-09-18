@@ -69,7 +69,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../quickstart.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../dev_introduction.html">Developer documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference (public)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../_autodoc_stubs/qiskit.html">SDK reference</a></li>
 </ul>
 
 <p class="spacer"/>
@@ -143,7 +143,7 @@
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">_qasmif</span><span class="p">(</span><span class="s2">&quot;tdg </span><span class="si">%s</span><span class="s2">[</span><span class="si">%d</span><span class="s2">];&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">qubit</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">qubit</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 
 
-<span class="k">def</span> <span class="nf">t</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+<div class="viewcode-block" id="t"><a class="viewcode-back" href="../../../../_autodoc_public/qiskit.extensions.standard.t.html#qiskit.t">[docs]</a><span class="k">def</span> <span class="nf">t</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Apply T to q.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">QuantumRegister</span><span class="p">):</span>
         <span class="n">gs</span> <span class="o">=</span> <span class="n">InstructionSet</span><span class="p">()</span>
@@ -152,7 +152,7 @@
         <span class="k">return</span> <span class="n">gs</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_qubit</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">TGate</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attach</span><span class="p">(</span><span class="n">TGate</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span></div>
 
 
 <span class="k">def</span> <span class="nf">tdg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>

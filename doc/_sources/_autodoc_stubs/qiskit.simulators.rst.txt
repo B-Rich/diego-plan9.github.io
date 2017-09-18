@@ -4,30 +4,50 @@ qiskit.simulators package
 .. automodule:: qiskit.simulators
 
 
-
-
-
-
-
-Contents
---------
+Submodules
+----------
 
 .. autosummary::
-    :nosignatures:
+   :nosignatures:
+   :toctree:
+
+    importlib
+    inspect
+    json
+    mod
+    os
+    pkgutil
+
+
+Classes
+-------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
 
     LocalSimulator
-    class_name
     class_obj
-    fullname
-    
-    
-    ispkg
-    
+
+.. toctree::
+    :hidden:
+
+    qiskit.simulators.LocalSimulator
+    qiskit.simulators.class_obj
+
+
+
+
+Functions
+---------
+
+.. autosummary::
+   :nosignatures:
+   :toctree: ../_autodoc_public
+
     local_backends
-    local_configuration
-    
-    mod_info
-    modspec
-    name
-    
-    
+
+.. toctree::
+    :hidden:
+
+    qiskit.simulators.local_backends

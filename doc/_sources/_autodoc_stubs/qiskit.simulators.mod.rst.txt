@@ -1,0 +1,22 @@
+qiskit\.simulators\.mod
+=======================
+
+.. automodule:: qiskit.simulators.mod
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      UnitarySimulator
+   
+   
+
+   
+   
+   

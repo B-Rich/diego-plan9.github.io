@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../_static/bootstrap.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="qiskit.dagcircuit package" href="qiskit.dagcircuit.html" />
     <link rel="prev" title="Structure" href="../dev_introduction.html" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--[if lt IE 9]>
@@ -45,6 +46,9 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="qiskit.dagcircuit.html" title="qiskit.dagcircuit package"
+             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="../dev_introduction.html" title="Structure"
              accesskey="P">previous</a> |</li>
@@ -72,8 +76,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../qiskit.html">QISKit overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dev_introduction.html">Developer documentation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">SDK reference (public)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SDK reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="qiskit.dagcircuit.html">qiskit.dagcircuit package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="qiskit.extensions.html">qiskit.extensions package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="qiskit.mapper.html">qiskit.mapper package</a></li>
@@ -82,7 +86,24 @@
 <li class="toctree-l3"><a class="reference internal" href="qiskit.unroll.html">qiskit.unroll package</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.ClassicalRegister.html">qiskit.ClassicalRegister</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.CompositeGate.html">qiskit.CompositeGate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.Gate.html">qiskit.Gate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.Instruction.html">qiskit.Instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.InstructionSet.html">qiskit.InstructionSet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.JobProcessor.html">qiskit.JobProcessor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.QuantumCircuit.html">qiskit.QuantumCircuit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.QuantumJob.html">qiskit.QuantumJob</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.QuantumProgram.html">qiskit.QuantumProgram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.QuantumRegister.html">qiskit.QuantumRegister</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.Result.html">qiskit.Result</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#exceptions">Exceptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../_autodoc_public/qiskit.QISKitError.html">qiskit.QISKitError</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -91,6 +112,9 @@
   <h4>Previous topic</h4>
   <p class="topless"><a href="../dev_introduction.html"
                         title="previous chapter">Structure</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="qiskit.dagcircuit.html"
+                        title="next chapter">qiskit.dagcircuit package</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -118,8 +142,8 @@
             
   <div class="section" id="module-qiskit">
 <span id="qiskit-package"></span><h1>qiskit package<a class="headerlink" href="#module-qiskit" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
@@ -146,55 +170,68 @@
 </tr>
 </tbody>
 </table>
-<div class="toctree-wrapper compound">
 </div>
-</div>
-<div class="section" id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">ClassicalRegister</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="../_autodoc_public/qiskit.ClassicalRegister.html#qiskit.ClassicalRegister" title="qiskit.ClassicalRegister"><code class="xref py py-obj docutils literal"><span class="pre">ClassicalRegister</span></code></a></td>
 <td>Implement a classical register.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">CompositeGate</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="../_autodoc_public/qiskit.CompositeGate.html#qiskit.CompositeGate" title="qiskit.CompositeGate"><code class="xref py py-obj docutils literal"><span class="pre">CompositeGate</span></code></a></td>
 <td>Composite gate, a sequence of unitary gates.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">Gate</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="../_autodoc_public/qiskit.Gate.html#qiskit.Gate" title="qiskit.Gate"><code class="xref py py-obj docutils literal"><span class="pre">Gate</span></code></a></td>
 <td>Unitary gate.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">Instruction</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="../_autodoc_public/qiskit.Instruction.html#qiskit.Instruction" title="qiskit.Instruction"><code class="xref py py-obj docutils literal"><span class="pre">Instruction</span></code></a></td>
 <td>Generic quantum computer instruction.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">InstructionSet</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="../_autodoc_public/qiskit.InstructionSet.html#qiskit.InstructionSet" title="qiskit.InstructionSet"><code class="xref py py-obj docutils literal"><span class="pre">InstructionSet</span></code></a></td>
 <td>Instruction collection.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">JobProcessor</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="../_autodoc_public/qiskit.JobProcessor.html#qiskit.JobProcessor" title="qiskit.JobProcessor"><code class="xref py py-obj docutils literal"><span class="pre">JobProcessor</span></code></a></td>
 <td>process a bunch of jobs and collect the results</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">QISKitError</span></code></td>
-<td>Base class for errors raised by the QISKit SDK.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="qiskit.QuantumCircuit.html#qiskit.QuantumCircuit" title="qiskit.QuantumCircuit"><code class="xref py py-obj docutils literal"><span class="pre">QuantumCircuit</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="../_autodoc_public/qiskit.QuantumCircuit.html#qiskit.QuantumCircuit" title="qiskit.QuantumCircuit"><code class="xref py py-obj docutils literal"><span class="pre">QuantumCircuit</span></code></a></td>
 <td>Quantum circuit.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">QuantumJob</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="../_autodoc_public/qiskit.QuantumJob.html#qiskit.QuantumJob" title="qiskit.QuantumJob"><code class="xref py py-obj docutils literal"><span class="pre">QuantumJob</span></code></a></td>
 <td>Creates a quantum circuit job</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="qiskit.QuantumProgram.html#qiskit.QuantumProgram" title="qiskit.QuantumProgram"><code class="xref py py-obj docutils literal"><span class="pre">QuantumProgram</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="../_autodoc_public/qiskit.QuantumProgram.html#qiskit.QuantumProgram" title="qiskit.QuantumProgram"><code class="xref py py-obj docutils literal"><span class="pre">QuantumProgram</span></code></a></td>
 <td>Quantum Program Class.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">QuantumRegister</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="../_autodoc_public/qiskit.QuantumRegister.html#qiskit.QuantumRegister" title="qiskit.QuantumRegister"><code class="xref py py-obj docutils literal"><span class="pre">QuantumRegister</span></code></a></td>
 <td>Implement a quantum register.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">Result</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="../_autodoc_public/qiskit.Result.html#qiskit.Result" title="qiskit.Result"><code class="xref py py-obj docutils literal"><span class="pre">Result</span></code></a></td>
 <td>Result Class.</td>
 </tr>
 </tbody>
 </table>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="../_autodoc_public/qiskit.QISKitError.html#qiskit.QISKitError" title="qiskit.QISKitError"><code class="xref py py-obj docutils literal"><span class="pre">QISKitError</span></code></a></td>
+<td>Base class for errors raised by the QISKit SDK.</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -213,6 +250,9 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="qiskit.dagcircuit.html" title="qiskit.dagcircuit package"
+             >next</a> |</li>
         <li class="right" >
           <a href="../dev_introduction.html" title="Structure"
              >previous</a> |</li>
