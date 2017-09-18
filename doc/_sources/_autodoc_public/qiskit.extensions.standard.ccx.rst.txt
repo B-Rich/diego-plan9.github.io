@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.ccx
-=================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: ccx

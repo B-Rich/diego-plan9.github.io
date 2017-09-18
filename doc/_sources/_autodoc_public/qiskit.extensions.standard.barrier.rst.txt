@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.barrier
-=====================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: barrier

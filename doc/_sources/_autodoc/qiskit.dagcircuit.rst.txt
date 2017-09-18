@@ -1,0 +1,19 @@
+qiskit.dagcircuit package
+=========================
+
+.. automodule:: qiskit.dagcircuit
+
+
+
+
+Classes
+-------
+
+.. autosummary::
+   :nosignatures:
+   :toctree:
+
+    DAGCircuit
+
+
+

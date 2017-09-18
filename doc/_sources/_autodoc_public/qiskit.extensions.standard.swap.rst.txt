@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.swap
-==================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: swap

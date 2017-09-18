@@ -1,0 +1,31 @@
+qiskit.simulators package
+=========================
+
+.. automodule:: qiskit.simulators
+
+
+
+
+Classes
+-------
+
+.. autosummary::
+   :nosignatures:
+   :toctree:
+
+    LocalSimulator
+    class_obj
+
+
+
+
+Functions
+---------
+
+.. autosummary::
+   :nosignatures:
+   :toctree:
+
+    local_backends
+
+

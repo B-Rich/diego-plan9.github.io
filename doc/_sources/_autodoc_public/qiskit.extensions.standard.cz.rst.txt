@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.cz
-================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: cz

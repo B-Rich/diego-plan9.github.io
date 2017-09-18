@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.rz
-================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: rz

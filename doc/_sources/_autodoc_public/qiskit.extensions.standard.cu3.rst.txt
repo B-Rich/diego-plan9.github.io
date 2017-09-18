@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.cu3
-=================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: cu3

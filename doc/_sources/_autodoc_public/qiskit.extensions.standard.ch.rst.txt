@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.ch
-================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: ch

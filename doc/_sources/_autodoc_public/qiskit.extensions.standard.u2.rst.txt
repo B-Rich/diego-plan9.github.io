@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.u2
-================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: u2

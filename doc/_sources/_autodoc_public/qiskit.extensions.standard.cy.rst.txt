@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.cy
-================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: cy

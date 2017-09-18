@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.cswap
-===================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: cswap

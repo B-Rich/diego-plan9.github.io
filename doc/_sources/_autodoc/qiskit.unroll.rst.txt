@@ -1,0 +1,32 @@
+qiskit.unroll package
+=====================
+
+.. automodule:: qiskit.unroll
+
+
+
+
+Classes
+-------
+
+.. autosummary::
+   :nosignatures:
+   :toctree:
+
+    CircuitBackend
+    DAGBackend
+    JsonBackend
+    PrinterBackend
+    Unroller
+    UnrollerBackend
+
+
+Exceptions
+----------
+
+.. autosummary::
+   :nosignatures:
+   :toctree:
+
+    BackendError
+

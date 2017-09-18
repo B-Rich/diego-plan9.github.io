@@ -1,6 +1,0 @@
-qiskit\.extensions\.standard\.rx
-================================
-
-.. currentmodule:: qiskit.extensions.standard
-
-.. autofunction:: rx
