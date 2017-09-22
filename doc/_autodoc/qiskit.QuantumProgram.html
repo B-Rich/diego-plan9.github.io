@@ -5,13 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>qiskit.QuantumProgram &#8212; QISKit SDK 0.3.5 documentation</title>
+    <title>qiskit.QuantumProgram &#8212; QISKit SDK 0.4.0 documentation</title>
     <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.3.5',
+        VERSION:     '0.4.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -59,7 +59,7 @@
   TOC</a> |
 </li>
 
-        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.4.0 documentation</a> &#187;</li>
 
           <li class="nav-item nav-item-1"><a href="qiskit.html" accesskey="U">qiskit package</a> &#187;</li> 
       </ul>
@@ -265,10 +265,10 @@ by “–description (type)–”. For example, a circuit’s name is denoted by
 <tr class="row-odd"><td><a class="reference internal" href="#qiskit.QuantumProgram.load" title="qiskit.QuantumProgram.load"><code class="xref py py-obj docutils literal"><span class="pre">load</span></code></a>([file_name])</td>
 <td>Load Quantum Program Json file into the Quantum Program object.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.load_qasm_file" title="qiskit.QuantumProgram.load_qasm_file"><code class="xref py py-obj docutils literal"><span class="pre">load_qasm_file</span></code></a>(qasm_file[,&nbsp;name,&nbsp;verbose])</td>
+<tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.load_qasm_file" title="qiskit.QuantumProgram.load_qasm_file"><code class="xref py py-obj docutils literal"><span class="pre">load_qasm_file</span></code></a>(qasm_file[,&nbsp;name,&nbsp;verbose,&nbsp;…])</td>
 <td>Load qasm file into the quantum program.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qiskit.QuantumProgram.load_qasm_text" title="qiskit.QuantumProgram.load_qasm_text"><code class="xref py py-obj docutils literal"><span class="pre">load_qasm_text</span></code></a>(qasm_string[,&nbsp;name,&nbsp;verbose])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#qiskit.QuantumProgram.load_qasm_text" title="qiskit.QuantumProgram.load_qasm_text"><code class="xref py py-obj docutils literal"><span class="pre">load_qasm_text</span></code></a>(qasm_string[,&nbsp;name,&nbsp;verbose,&nbsp;…])</td>
 <td>Load qasm string in the quantum program.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#qiskit.QuantumProgram.local_backends" title="qiskit.QuantumProgram.local_backends"><code class="xref py py-obj docutils literal"><span class="pre">local_backends</span></code></a>()</td>
@@ -893,7 +893,7 @@ local or online simulator or experiment.</p>
 
 <dl class="method">
 <dt id="qiskit.QuantumProgram.load_qasm_file">
-<code class="descname">load_qasm_file</code><span class="sig-paren">(</span><em>qasm_file</em>, <em>name=None</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.load_qasm_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.load_qasm_file" title="Permalink to this definition">¶</a></dt>
+<code class="descname">load_qasm_file</code><span class="sig-paren">(</span><em>qasm_file</em>, <em>name=None</em>, <em>verbose=False</em>, <em>basis_gates='u1</em>, <em>u2</em>, <em>u3</em>, <em>cx</em>, <em>id'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.load_qasm_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.load_qasm_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load qasm file into the quantum program.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -919,7 +919,7 @@ quantum program and returns the name to be used to get this circuit</dd>
 
 <dl class="method">
 <dt id="qiskit.QuantumProgram.load_qasm_text">
-<code class="descname">load_qasm_text</code><span class="sig-paren">(</span><em>qasm_string</em>, <em>name=None</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.load_qasm_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.load_qasm_text" title="Permalink to this definition">¶</a></dt>
+<code class="descname">load_qasm_text</code><span class="sig-paren">(</span><em>qasm_string</em>, <em>name=None</em>, <em>verbose=False</em>, <em>basis_gates='u1</em>, <em>u2</em>, <em>u3</em>, <em>cx</em>, <em>id'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_quantumprogram.html#QuantumProgram.load_qasm_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumProgram.load_qasm_text" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load qasm string in the quantum program.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1034,7 +1034,7 @@ run or list of qobj.</li>
 <li><strong>wait</strong> (<em>int</em>) – Wait time is how long to check if all jobs is completed</li>
 <li><strong>timeout</strong> (<em>int</em>) – Time until the execution stops</li>
 <li><strong>silent</strong> (<em>bool</em>) – If true, prints out the running information</li>
-<li><strong>callback</strong> (<em>fn</em><em>(</em><a class="reference internal" href="qiskit.simulators.LocalSimulator.html#qiskit.simulators.LocalSimulator.result" title="qiskit.simulators.LocalSimulator.result"><em>result</em></a><em>)</em>) – A function with signature:
+<li><strong>callback</strong> (<em>fn</em><em>(</em><a class="reference internal" href="qiskit.simulators._localsimulator.html#qiskit.simulators._localsimulator.LocalSimulator.result" title="qiskit.simulators._localsimulator.LocalSimulator.result"><em>result</em></a><em>)</em>) – A function with signature:
 fn(result):
 The result param will be a Result object.</li>
 </ul>
@@ -1185,14 +1185,14 @@ experience.</li>
   TOC</a> |
 </li>
 
-        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.3.5 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">QISKit SDK 0.4.0 documentation</a> &#187;</li>
 
           <li class="nav-item nav-item-1"><a href="qiskit.html" >qiskit package</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2017 IBM Research.
-      Last updated on 2017/09/18.
+      Last updated on 2017/09/22.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
     </div>
   </body>

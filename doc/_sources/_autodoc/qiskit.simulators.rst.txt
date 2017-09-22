@@ -4,17 +4,19 @@ qiskit.simulators package
 .. automodule:: qiskit.simulators
 
 
-
-
-Classes
--------
+Submodules
+----------
 
 .. autosummary::
    :nosignatures:
    :toctree:
 
-    LocalSimulator
-    class_obj
+    _localsimulator
+    _qasm_cpp_simulator
+    _qasmsimulator
+    _unitarysimulator
+
+
 
 
 
