@@ -1,12 +1,12 @@
 qiskit\.mapper\.Coupling
 ========================
 
+
 .. currentmodule:: qiskit.mapper
 
 .. autoclass:: Coupling
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

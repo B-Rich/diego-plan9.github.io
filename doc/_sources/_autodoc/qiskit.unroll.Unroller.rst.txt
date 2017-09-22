@@ -1,12 +1,12 @@
 qiskit\.unroll\.Unroller
 ========================
 
+
 .. currentmodule:: qiskit.unroll
 
 .. autoclass:: Unroller
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

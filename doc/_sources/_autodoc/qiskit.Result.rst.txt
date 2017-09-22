@@ -1,12 +1,12 @@
 qiskit\.Result
 ==============
 
+
 .. currentmodule:: qiskit
 
 .. autoclass:: Result
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

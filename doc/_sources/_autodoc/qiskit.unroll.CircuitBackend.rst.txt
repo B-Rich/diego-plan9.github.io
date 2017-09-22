@@ -1,12 +1,12 @@
 qiskit\.unroll\.CircuitBackend
 ==============================
 
+
 .. currentmodule:: qiskit.unroll
 
 .. autoclass:: CircuitBackend
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

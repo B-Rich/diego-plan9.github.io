@@ -1,12 +1,12 @@
 qiskit\.unroll\.JsonBackend
 ===========================
 
+
 .. currentmodule:: qiskit.unroll
 
 .. autoclass:: JsonBackend
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

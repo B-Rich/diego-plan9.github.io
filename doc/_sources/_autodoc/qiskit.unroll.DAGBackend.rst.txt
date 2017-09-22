@@ -1,12 +1,12 @@
 qiskit\.unroll\.DAGBackend
 ==========================
 
+
 .. currentmodule:: qiskit.unroll
 
 .. autoclass:: DAGBackend
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

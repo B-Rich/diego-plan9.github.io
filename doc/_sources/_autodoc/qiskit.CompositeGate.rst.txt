@@ -1,12 +1,12 @@
 qiskit\.CompositeGate
 =====================
 
+
 .. currentmodule:: qiskit
 
 .. autoclass:: CompositeGate
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

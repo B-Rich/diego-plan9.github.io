@@ -25,6 +25,7 @@ Classes
 .. autosummary::
    :nosignatures:
    :toctree:
+   :template: autosummary/class.rst
 
     ClassicalRegister
     CompositeGate

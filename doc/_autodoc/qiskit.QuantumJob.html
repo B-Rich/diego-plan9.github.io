@@ -138,65 +138,6 @@
 <em class="property">class </em><code class="descclassname">qiskit.</code><code class="descname">QuantumJob</code><span class="sig-paren">(</span><em>circuits</em>, <em>backend='local_qasm_simulator'</em>, <em>circuit_configs=None</em>, <em>timeout=60</em>, <em>seed=None</em>, <em>resources={'max_credits': 3}</em>, <em>shots=1024</em>, <em>names=None</em>, <em>doCompile=False</em>, <em>preformatted=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#QuantumJob"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumJob" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
 <p>Creates a quantum circuit job</p>
-<dl class="method">
-<dt id="qiskit.QuantumJob.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>circuits</em>, <em>backend='local_qasm_simulator'</em>, <em>circuit_configs=None</em>, <em>timeout=60</em>, <em>seed=None</em>, <em>resources={'max_credits': 3}</em>, <em>shots=1024</em>, <em>names=None</em>, <em>doCompile=False</em>, <em>preformatted=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#QuantumJob.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumJob.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>circuit</strong> (<em>QuantumCircuit | qobj</em>) – QuantumCircuit or list of QuantumCircuit
-objects for job.</li>
-<li><strong>backend</strong> (<em>str</em>) – the backend to run the circuit on.</li>
-<li><strong>resources</strong> (<em>dict</em>) – resource requirements of job.</li>
-<li><strong>timeout</strong> (<em>float</em>) – timeout for job in seconds.</li>
-<li><strong>coupling_map</strong> (<em>dict</em>) – <p>A directed graph of coupling:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
- <span class="n">control</span><span class="p">(</span><span class="nb">int</span><span class="p">):</span>
-     <span class="p">[</span>
-         <span class="n">target1</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span>
-         <span class="n">target2</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span>
-         <span class="p">,</span> <span class="o">...</span>
-    <span class="p">],</span>
-     <span class="o">...</span>
-<span class="p">}</span>
-
-<span class="n">eg</span><span class="o">.</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mi">1</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mi">3</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">]}</span>
-</pre></div>
-</div>
-</li>
-<li><strong>initial_layout</strong> (<em>dict</em>) – <p>A mapping of qubit to qubit:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="n">strart</span><span class="p">(</span><span class="nb">int</span><span class="p">)):</span> <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="n">final</span><span class="p">(</span><span class="nb">int</span><span class="p">)),</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-<span class="n">eg</span><span class="o">.</span>
-<span class="p">{</span>
-  <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span> <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
-  <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span> <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-  <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span> <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
-  <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span> <span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><strong>shots</strong> (<em>int</em>) – the number of shots</li>
-<li><strong>max_credits</strong> (<em>int</em>) – the max credits to use 3, or 5</li>
-<li><strong>seed</strong> (<em>int</em>) – the intial seed the simulatros use</li>
-<li><strong>circuit_type</strong> (<em>str</em>) – “compiled_dag” or “uncompiled_dag” or
-“quantum_circuit”</li>
-<li><strong>preformated</strong> (<em>bool</em>) – the objects in circuits are already compiled
-and formatted (qasm for online, json for local). If true the
-parameters “names” and “circuit_configs” must also be defined
-of the same length as “circuits”.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -218,8 +159,8 @@ of the same length as “circuits”.</li>
 </tbody>
 </table>
 <dl class="method">
-<dt>
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>circuits</em>, <em>backend='local_qasm_simulator'</em>, <em>circuit_configs=None</em>, <em>timeout=60</em>, <em>seed=None</em>, <em>resources={'max_credits': 3}</em>, <em>shots=1024</em>, <em>names=None</em>, <em>doCompile=False</em>, <em>preformatted=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#QuantumJob.__init__"><span class="viewcode-link">[source]</span></a></dt>
+<dt id="qiskit.QuantumJob.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>circuits</em>, <em>backend='local_qasm_simulator'</em>, <em>circuit_configs=None</em>, <em>timeout=60</em>, <em>seed=None</em>, <em>resources={'max_credits': 3}</em>, <em>shots=1024</em>, <em>names=None</em>, <em>doCompile=False</em>, <em>preformatted=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#QuantumJob.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.QuantumJob.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

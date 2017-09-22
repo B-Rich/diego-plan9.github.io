@@ -1,12 +1,12 @@
 qiskit\.InstructionSet
 ======================
 
+
 .. currentmodule:: qiskit
 
 .. autoclass:: InstructionSet
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

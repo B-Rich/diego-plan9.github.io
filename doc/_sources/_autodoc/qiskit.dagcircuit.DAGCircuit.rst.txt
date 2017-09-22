@@ -1,12 +1,12 @@
 qiskit\.dagcircuit\.DAGCircuit
 ==============================
 
+
 .. currentmodule:: qiskit.dagcircuit
 
 .. autoclass:: DAGCircuit
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

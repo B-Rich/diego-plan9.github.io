@@ -1,12 +1,12 @@
 qiskit\.JobProcessor
 ====================
 
+
 .. currentmodule:: qiskit
 
 .. autoclass:: JobProcessor
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods

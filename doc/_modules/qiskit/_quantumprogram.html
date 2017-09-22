@@ -194,7 +194,7 @@
     <span class="n">__api</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">__api_config</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="QuantumProgram.__init__"><a class="viewcode-back" href="../../_autodoc/qiskit.QuantumProgram.html#qiskit.QuantumProgram.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">specs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">specs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__quantum_registers</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__classical_registers</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__quantum_program</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># stores all the quantum programs</span>
@@ -209,7 +209,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">callback</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">jobs_results_ready_event</span> <span class="o">=</span> <span class="n">Event</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">are_multiple_results</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># are we expecting multiple results?</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">are_multiple_results</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># are we expecting multiple results?</span>
 
 
     <span class="c1">###############################################################</span>
@@ -1264,9 +1264,9 @@
 <span class="sd">            ]</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="Result.__init__"><a class="viewcode-back" href="../../_autodoc/qiskit.Result.html#qiskit.Result.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">qobj_result</span><span class="p">,</span> <span class="n">qobj</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">qobj_result</span><span class="p">,</span> <span class="n">qobj</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__qobj</span> <span class="o">=</span> <span class="n">qobj</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__result</span> <span class="o">=</span> <span class="n">qobj_result</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__result</span> <span class="o">=</span> <span class="n">qobj_result</span>
 
     <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Get the status of the run.</span>

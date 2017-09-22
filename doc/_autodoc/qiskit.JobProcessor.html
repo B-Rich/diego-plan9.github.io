@@ -138,31 +138,6 @@
 <em class="property">class </em><code class="descclassname">qiskit.</code><code class="descname">JobProcessor</code><span class="sig-paren">(</span><em>q_jobs</em>, <em>callback</em>, <em>max_workers=1</em>, <em>token=None</em>, <em>url=None</em>, <em>api=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#JobProcessor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.JobProcessor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
 <p>process a bunch of jobs and collect the results</p>
-<dl class="method">
-<dt id="qiskit.JobProcessor.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>q_jobs</em>, <em>callback</em>, <em>max_workers=1</em>, <em>token=None</em>, <em>url=None</em>, <em>api=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#JobProcessor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.JobProcessor.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>q_jobs</strong> (<em>list</em><em>(</em><a class="reference internal" href="qiskit.QuantumJob.html#qiskit.QuantumJob" title="qiskit.QuantumJob"><em>QuantumJob</em></a><em>)</em>) – List of QuantumJob objects.</li>
-<li><strong>callback</strong> (<em>fn</em><em>(</em><em>results</em><em>)</em>) – The function that will be called when all
-jobs finish. The signature of the function must be:
-fn(results)
-results: A list of (result, qobj) tuples.</li>
-<li><strong>max_workers</strong> (<em>int</em>) – The maximum number of workers to use.</li>
-<li><strong>token</strong> (<em>str</em>) – Server API token</li>
-<li><strong>url</strong> (<em>str</em>) – Server URL.</li>
-<li><strong>api</strong> (<em>IBMQuantumExperience</em>) – API instance to use. If set,
-/token/ and /url/ are ignored.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -187,8 +162,8 @@ results: A list of (result, qobj) tuples.</li>
 </tbody>
 </table>
 <dl class="method">
-<dt>
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>q_jobs</em>, <em>callback</em>, <em>max_workers=1</em>, <em>token=None</em>, <em>url=None</em>, <em>api=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#JobProcessor.__init__"><span class="viewcode-link">[source]</span></a></dt>
+<dt id="qiskit.JobProcessor.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>q_jobs</em>, <em>callback</em>, <em>max_workers=1</em>, <em>token=None</em>, <em>url=None</em>, <em>api=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qiskit/_jobprocessor.html#JobProcessor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#qiskit.JobProcessor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

@@ -1,12 +1,12 @@
 qiskit\.QuantumRegister
 =======================
 
+
 .. currentmodule:: qiskit
 
 .. autoclass:: QuantumRegister
 
    
-   .. automethod:: __init__
 
    
    .. rubric:: Methods
